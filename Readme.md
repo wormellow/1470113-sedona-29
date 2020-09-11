@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Всеволод Изотов](https://up.htmlacademy.ru/htmlcss/29/user/1470113).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Седельников](https://htmlacademy.ru/profile/iduckyduck).
 
 ---
 
