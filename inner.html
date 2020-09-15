@@ -1,32 +1,152 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-   <header>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+  <header>
     <ul class="header-nav">
-      <li>Информация</li>
-      <li>Фото и видео</li>
-      <li class="header-nav-logo"></li>
-      <li>Карта штата</li>
-      <li>Гостиницы</li>
+      <li class="header-nav-item">
+        <h3>>Информация</h3>
+      </li>
+      <li class="header-nav-item">
+        <h3>Фото и видео</h3>
+      </li>
+      <li class="header-nav-logo"><img src="../1470113-sedona-29/img/pic.png" alt="Логотип сайта" width="150px"
+          height="150px"></li>
+      <li class="header-nav-item">
+        <h3>Карта штата</h3>
+      </li>
+      <li class="header-nav-item">
+        <h3>Гостиницы</h3>
+      </li>
     </ul>
-   </header>
-   
-   <main>
-    <section class="inner-filters"></section>
-    <section class="breadcrumbs"></section>
-    <section></section>
-    <section></section>
-    <section></section>
-   </main>
-  
-   <footer>
-    <div class="contacts"></div>
-    <div class="socicons"></div>
-    <div class="developer"></div>
-   </footer>
-  </body>
+  </header>
+
+  <main>
+    <section class="inner-filters">
+      <h3>Инфраструктура:</h3>
+      <ul class="filter-right-list">
+        <li class="filter-right-item">Бассеин</li>
+        <li class="filter-right-item">Парковка</li>
+        <li class="filter-right-item">Wi-Fi</li>
+      </ul>
+      <h3>Тип жилья:</h3>
+      <ul class="filter-left-list">
+        <li class="filter-left-item">Гостиница</li>
+        <li class="filter-left-item">Мотель</li>
+        <li class="filter-left-item">Апартаменты</li>
+      </ul>
+      <h3>Стоимость в сутки:</h3>
+      <input type="text" name="min" id="price">
+      <input type="text" name="max" id="price">
+      <input type="range" min="0" max="3500" step="1" name="price" id="price">
+      <button>Показать</button>
+    </section>
+
+    <section class="breadcrumbs">
+      <h2>Найдено: 3</h2>
+      <span>Сортировка:</span>
+      <ul class="breadcrumbs-filter-list">
+        <li class="breadcrumbs-filter-item">
+          <a href="#">По цене</a>
+        </li>
+        <li class="breadcrumbs-filter-item">
+          <a href="#">По типу</a>
+        </li>
+        <li class="breadcrumbs-filter-item">
+          <a href="#">По рейтингу</a>
+        </li>
+      </ul>
+      <div class="breadcrumbs-arrows"></div>
+    </section>
+
+    <section>
+      <div class="hotel-photo">
+        <img src="../1470113-sedona-29/img/pic.png" alt="Amara resort&spa" width="150px" height="150px">
+      </div>
+      <div class="hotel-block">
+        <h2>Amara resort&spa</h2>
+        <div class="hotel-type">
+          <span>Гостиница</span>
+          <a href="#">Подробнее</a>
+        </div>
+        <div class="reserve">
+          <span>От 3500р.</span>
+          <a href="#">Забронировать</a>
+        </div>
+      </div>
+      <div class="ratio-block">
+        <div class="stars">
+          <img src="../1470113-sedona-29/img/pic.png" alt="Звезда" width="150px" height="150px">
+        </div>
+        <span>Рейтинг: 8,5</span>
+      </div>
+    </section>
+
+    <section>
+      <div class="hotel-photo">
+        <img src="../1470113-sedona-29/img/pic.png" alt="Desert qualinn" width="150px" height="150px">
+      </div>
+      <div class="hotel-block">
+        <h2>Desert qualinn</h2>
+        <div class="hotel-type">
+          <span>Мотель</span>
+          <a href="#">Подрбнее</a>
+        </div>
+        <div class="reserve">
+          <span>От 2000 р.</span>
+          <a href="#">Забронировать</a>
+        </div>
+      </div>
+      <div class="ratio-block">
+        <div class="stars">
+          <img src="../1470113-sedona-29/img/pic.png" alt="Звезда" width="150px" height="150px">
+        </div>
+        <span>Рейтинг: 8,9</span>
+      </div>
+
+    </section>
+
+    <section>
+      <div class="hotel-photo">
+        <img src="../1470113-sedona-29/img/pic.png" alt="Villas at poco diablo" width="150px" height="150px">
+      </div>
+      <div class="hotel-block">
+        <h2>Villas at poco diablo</h2>
+        <div class="hotel-type">
+          <span>Апартаменты</span>
+          <a href="#">Подробнее</a>
+        </div>
+        <div class="reserve">
+          <span>От 4000 р.</span>
+          <a href="#">Забронировать</a>
+        </div>
+      </div>
+      <div class="ratio-block">
+        <div class="stars">
+          <img src="../1470113-sedona-29/img/pic.png" alt="Звезда" width="150px" height="150px">
+        </div>
+        <span>Рейтинг: 9,2</span>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="contacts">
+      <h2>#visitsedona тел: +7(495)666-01-666</h2>
+    </div>
+    <div class="socicons"><img src="../1470113-sedona-29/img/pic.png" alt="Иконки соцсетей" width="150px"
+        height="150px"></div>
+    <div class="developer">
+      <span>Website by</span>
+      <img src="../1470113-sedona-29/img/pic.png" alt="Иконка разработчика" width="150px" height="150px">
+    </div>
+  </footer>
+</body>
+
 </html>
