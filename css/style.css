@@ -171,6 +171,9 @@ h2 {
     width: 46px;
     height: 48px;
     background-color: var(--sedona-blue);
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 
@@ -179,11 +182,11 @@ h2 {
 }
 
 .social-networks a:active {
-    background-color: var(--sedona-blue-darkest);    
+    background-color: var(--sedona-blue-darkest);  
 }
 
-.social-networks img:active {
-    opacity: 30%;
+.social-networks a:active img {
+    opacity: 0.3
 }
 
 
