@@ -11,6 +11,7 @@
 body {
     font-family: "PT Sans", "Arial", sans-serif;
     text-transform: uppercase;
+    font-size: 14px;
 }
 
 a {
@@ -19,10 +20,10 @@ a {
 
 .header-nav-list {
     list-style: none;
+    margin: 0;
 }
 
 .header-nav-item {
-    size: 14px;
     line-height: 26px;
     font-weight: 700;
     color: var(--black);
@@ -38,8 +39,8 @@ a {
     opacity: 30%;
 }
 
-h2 {
-    size: 21px;
+.section-heading {
+    font-size: 21px;
     line-height: 26px;
     font-weight: 700;
     color: var(--black);
@@ -48,10 +49,10 @@ h2 {
 
 .features-list {
     list-style: none;
+    margin: 0;
 }
 
 .features-main p{
-    size: 14px;
     line-height: 26px;
     font-weight: 400;
     color: var(--black);
@@ -63,7 +64,7 @@ h2 {
 }
 
 .features-blue h3 {
-    size: 21px;
+    font-size: 21px;
     line-height: 21px;
     font-weight: 700;
     color: var(--white);
@@ -71,7 +72,6 @@ h2 {
 }
 
 .features-blue span {
-    size: 14px;
     line-height: 21px;
     font-weight: 400;
     color: var(--white);
@@ -79,7 +79,6 @@ h2 {
 }
 
 .features-blue p {
-    size: 14px;
     line-height: 21px;
     font-weight: 400;
     color: var(--white);
@@ -88,10 +87,11 @@ h2 {
 
 .features-white-list {
     list-style: none;
+    margin: 0;
 }
 
 .features-white-item h3 {
-    size: 21px;
+    font-size: 21px;
     line-height: 21px;
     font-weight: 700;
     color: var(--black);
@@ -99,7 +99,6 @@ h2 {
 }
 
 .features-white-item p {
-    size: 14px;
     line-height: 21px;
     font-weight: 400;
     color: var(--black);
@@ -111,7 +110,7 @@ h2 {
 }
 
 .features-grey-item h3 {
-    size: 21px;
+    font-size: 21px;
     line-height: 21px;
     font-weight: 700;
     color: var(--black); 
@@ -119,7 +118,7 @@ h2 {
 }
 
 .features-grey-item span {
-    size: 12px;
+    font-size: 12px;
     line-height: 21px;
     font-weight: 400;
     color: var(--black);
@@ -127,7 +126,6 @@ h2 {
 }
 
 .features-grey-item p {
-    size: 14px;
     line-height: 21px;
     font-weight: 400;
     color: var(--black);
@@ -135,15 +133,14 @@ h2 {
 }
 
 .interested p {
-    size: 14px;
     line-height: 24px;
     font-weight: 400;
     color: var(--black);
     text-align: center;  
 }
 
-.interested h2 {
-    size: 30px;
+.interested .section-heading {
+    font-size: 30px;
     line-height: 24px;
     font-weight: 700;
     color: var(--black);
@@ -151,7 +148,7 @@ h2 {
 }
 
 .contacts {
-    size: 21px;
+    font-size: 21px;
     line-height: 26px;
     font-weight: 700;
     color: var(--black);
@@ -164,10 +161,10 @@ h2 {
 
 .social-networks {
     list-style: none;
+    margin: 0;
 }
 
 .social-networks a{
-    display: inline-block;
     width: 46px;
     height: 48px;
     background-color: var(--sedona-blue);
@@ -191,25 +188,24 @@ h2 {
 
 
 .copyright span {
-    size: 14px;
     line-height: 26px;
     font-weight: 400;
     color: var(--black);
     text-align: center;
 }
 
-.copyright a {
-    background: url(../img/copyrightblack.png);
+.copyright-logo {
+    fill: var(--black);
     display: block;
     width: 114px;
     height: 40px;
 }
 
-.copyright a:hover {
-    background-image: url(../img/copyrightblue.png);
+.copyright-logo:hover {
+    fill: var(--sedona-blue);
 }
 
-.copyright a:active {
-    background-image: url(../img/copyrightgrey.png);
+.copyright-logo:active {
+    opacity: 30%;
 }
 
