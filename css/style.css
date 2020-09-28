@@ -6,12 +6,17 @@
     --sedona-blue-darkest: #5496bd;
     --sedona-brown: #766357;
     --sedona-features-grey: #eeeeee;
+    --copyright-logo-grey: #bdbbbc;
   }
 
 body {
     font-family: "PT Sans", "Arial", sans-serif;
     text-transform: uppercase;
     font-size: 14px;
+    color: var(--black);
+    font-weight: 700;
+    line-height: 21px;
+   
 }
 
 a {
@@ -25,9 +30,8 @@ a {
 
 .header-nav-item {
     line-height: 26px;
-    font-weight: 700;
-    color: var(--black);
     text-align: center;
+    color: var(--black);
 }
 
 .header-nav-item:hover,
@@ -44,73 +48,67 @@ a {
 .section-heading {
     font-size: 21px;
     line-height: 26px;
-    font-weight: 700;
-    color: var(--black);
     text-align: center;
+}
+
+.features-main p {
+    font-weight: 400;
+    text-align: center;
+    line-height: 26px;
 }
 
 .features-list {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
+}
   
   
-  .features-item h3 {
+.features-item h3 {
     font-size: 21px;
-    line-height: 21px;
-    font-weight: 700;
     color: var(--back);
     text-align: center;
-  }
+}
   
-  .features-item span {
-    line-height: 21px;
+.features-item span {
     font-weight: 400;
-    color: var(--black);
     text-align: center;
-  }
+}
   
-  .features-item p {
-    line-height: 21px;
+.features-item p {
     font-weight: 400;
-    color: var(--black);
     text-align: center;
-  }
+}
   
-  .features-item.primary {
+.features-item.primary {
     background-color: var(--sedona-blue);
-  }
+}
   
   .features-item.primary h3,
   .features-item.primary span,
   .features-item.primary p {
     color: var(--white);
-  }
+}
   
-  .features-item.secondary {
+.features-item.secondary {
     background-color: var(--sedona-features-grey);
-  }
+}
+
 .interested p {
     line-height: 24px;
     font-weight: 400;
-    color: var(--black);
     text-align: center;  
 }
 
 .interested .section-heading {
     font-size: 30px;
     line-height: 24px;
-    font-weight: 700;
-    color: var(--black);
     text-align: center;
 }
 
 .contacts {
     font-size: 21px;
     line-height: 26px;
-    font-weight: 700;
-    color: var(--black);
     text-align: center;
 }
 
@@ -136,7 +134,6 @@ a {
 .social-networks a:hover,
 .social-networks a:focus {
     background-color: var(--sedona-blue-dark);
-    outline: none;
 }
 
 .social-networks a:active {
@@ -151,7 +148,6 @@ a {
 .copyright span {
     line-height: 26px;
     font-weight: 400;
-    color: var(--black);
     text-align: center;
 }
 
@@ -164,7 +160,6 @@ a {
 .copyright-logo:hover path,
 .copyright-logo:focus path {
     fill: var(--sedona-blue);
-    outline: none;
 }
 
 .copyright-logo:active path{
