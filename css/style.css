@@ -7,6 +7,8 @@
     --sedona-brown: #766357;
     --sedona-features-grey: #eeeeee;
     --copyright-logo-grey: #bdbbbc;
+    --ratio-grey: #666666;
+    --ratio-block-grey: #f2f2f2;
   }
 
 body {
@@ -109,6 +111,77 @@ a {
     font-size: 30px;
     line-height: 24px;
     text-align: center;
+}
+
+.sort {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.sort-filter-list {
+    list-style: none;
+}
+
+.sort-filter-item a{
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: var(--sedona-blue);
+    color: var(--black);
+    opacity: 30%;
+}
+
+.sort-filter-item a:hover,
+.sort-filter-item a:focus {
+    color: var(--sedona-blue);
+    opacity: 100%;
+}
+
+.sort-filter-item a:active {
+    text-decoration: none;
+    color: var(--black);
+    opacity: 100%;
+}
+
+.sort-filter-item .sort-active {
+    text-decoration: none;
+    color: var(--sedona-blue);
+    opacity: 100%;
+}
+
+.hotel-block h3,
+.match {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.hotels-list {
+    list-style: none;
+}
+
+.hotel-type span,
+.reserve span {
+    font-weight: 400;
+}
+
+.more-btn,
+.reserve-btn {
+    color: var(--white);
+}
+
+.more-btn {
+    background-color: var(--sedona-blue);
+}
+
+.reserve-btn {
+    background-color: var(--sedona-brown);
+}
+
+.ratio-block span {
+    background-color: var(--ratio-block-grey);
+    color: var(--ratio-grey);
+    font-weight: 400;
 }
 
 .contacts {
