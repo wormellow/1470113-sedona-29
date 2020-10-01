@@ -20,7 +20,13 @@ body {
     color: var(--black);
     font-weight: 700;
     line-height: 21px;
-   
+    background-color: var(--ratio-block-grey);
+}
+
+.container {
+    background-color: var(--white);
+    width: 1200px;
+    margin: auto;
 }
 
 a {
