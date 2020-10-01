@@ -129,6 +129,12 @@ a {
     list-style: none;
 }
 
+.sort-filter-list,
+.hotels-list {
+    margin: 0;
+    padding: 0;
+}
+
 .sort-filter-item a{
     text-decoration: underline;
     text-decoration-style: dotted;
@@ -160,6 +166,22 @@ a {
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
+}
+
+.hotel-name {
+    color: var(--black);
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.hotel-name:hover,
+.hotel-name:focus {
+    color: var(--sedona-blue);
+}
+
+.hotel-name:active {
+    color: var(--black);
+    opacity: 30%;
 }
 
 .hotels-list {
