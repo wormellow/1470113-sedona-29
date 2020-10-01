@@ -5,6 +5,8 @@
     --sedona-blue-dark: #669ec0;
     --sedona-blue-darkest: #5496bd;
     --sedona-brown: #766357;
+    --sedona-brown-dark: #604e43;
+    --sedona-brown-darkest: #503e33;
     --sedona-features-grey: #eeeeee;
     --copyright-logo-grey: #bdbbbc;
     --ratio-grey: #666666;
@@ -45,6 +47,10 @@ a {
 .header-nav-item:active {
     color: var(--black);
     opacity: 30%;
+}
+
+.header-nav-active {
+    color: var(--sedona-brown);
 }
 
 .section-heading {
@@ -174,8 +180,28 @@ a {
     background-color: var(--sedona-blue);
 }
 
+.more-btn:hover,
+.more-btn:focus {
+    background-color: var(--sedona-blue-dark);
+}
+
+.more-btn:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: var(--sedona-blue-darkest);
+}
+
 .reserve-btn {
     background-color: var(--sedona-brown);
+}
+
+.reserve-btn:hover,
+.reserve-btn:focus {
+    background-color: var(--sedona-brown-dark);
+}
+
+.reserve-btn:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: var(--sedona-brown-darkest);
 }
 
 .ratio-block span {
