@@ -172,6 +172,7 @@ a {
 .button-arrow {
     border: none;
     background-color: var(--white);
+    cursor: pointer;
 }
 
 
