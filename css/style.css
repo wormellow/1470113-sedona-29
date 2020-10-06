@@ -119,6 +119,11 @@ a {
   
 .features-item.secondary {
     background-color: var(--sedona-features-grey);
+    list-style: none;
+}
+
+.features-secondary {
+    padding: 0;
 }
 
 .interested p {
