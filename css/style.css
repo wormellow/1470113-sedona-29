@@ -14,6 +14,17 @@
     --arrow-grey: #cacaca;
   }
 
+.page {
+      height: 100%;
+}
+
+.page-body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+}
+
 body {
     font-family: "PT Sans", "Arial", sans-serif;
     text-transform: uppercase;
@@ -34,6 +45,7 @@ body {
 a {
     text-decoration: none;
 }
+
 
 .header-nav-list {
     list-style: none;
@@ -74,6 +86,8 @@ a {
 }
 
 .features-extra-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     list-style: none;
     padding: 0;
 }
@@ -103,6 +117,8 @@ a {
 }
 
 .features-primary-list {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     list-style: none;
     padding: 0;
 }
@@ -116,13 +132,23 @@ a {
   .features-item.primary p {
     color: var(--white);
 }
-  
+
+.primary-second {
+    order: 2;
+}
+
+.primary-pic {
+    line-height: 0;
+}
+
 .features-item.secondary {
     background-color: var(--sedona-features-grey);
     list-style: none;
 }
 
 .features-secondary {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 0;
 }
 
@@ -271,6 +297,11 @@ a {
     font-weight: 400;
 }
 
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .contacts {
     font-size: 21px;
     line-height: 26px;
@@ -282,6 +313,10 @@ a {
 }
 
 .social-networks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: center;
+    grid-gap: 6px;
     list-style: none;
     margin: 0;
     padding: 0;
