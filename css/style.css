@@ -301,6 +301,7 @@ a {
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
 }
 
 .contacts {
@@ -351,12 +352,13 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 8px;
+    align-items: end;
 }
 
 .copyright span {
     line-height: 26px;
     font-weight: 400;
- 
+    text-align: right;
 }
 
 .copyright-logo {
