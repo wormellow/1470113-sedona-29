@@ -166,6 +166,8 @@ a {
 }
 
 .sort {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
@@ -227,11 +229,22 @@ a {
     fill: var(--sedona-blue);
 }
 
+
 .hotel-block h3,
 .match {
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
+}
+
+.hotel {
+    display: grid;
+    grid-template-columns: 1fr 1fr 127px;
+}
+
+.hotel-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .hotel-name {
@@ -290,6 +303,10 @@ a {
 .reserve-btn:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: var(--sedona-brown-darkest);
+}
+
+.ratio-block {
+    align-items: ;
 }
 
 .ratio-block span {
