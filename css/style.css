@@ -21,8 +21,6 @@
 .page-body {
     min-height: 100%;
     display: grid;
-    grid-template-rows: min-content 1fr min-content;
-    align-content: start;
 }
 
 body {
@@ -174,7 +172,7 @@ a {
 
 .sort {
     display: grid;
-    grid-template-columns: 127px 1fr 127px;
+    grid-template-columns: 1fr 127px;
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
@@ -187,9 +185,7 @@ a {
 
 .sort-filter-list {
     list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 32px;
+
 }
 
 .sort-filter-list,
