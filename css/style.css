@@ -53,7 +53,11 @@ a {
 
 
 .header-nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     list-style: none;
+    height: 56px;
     margin: 0;
     padding: 0;
 }
@@ -62,6 +66,10 @@ a {
     line-height: 26px;
     text-align: center;
     color: var(--black);
+}
+
+.header-nav-list li:nth-child(3){
+    margin-left: 250px;
 }
 
 .header-nav-item:hover,
@@ -76,6 +84,11 @@ a {
 
 .header-nav-active {
     color: var(--sedona-brown);
+}
+
+.site-logo {
+    position: absolute;
+    left: 621px;
 }
 
 .section-heading {
