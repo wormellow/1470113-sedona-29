@@ -52,6 +52,9 @@ a {
     text-decoration: none;
 }
 
+.header-nav {
+    position: relative;
+}
 
 .header-nav-list {
     display: flex;
@@ -112,8 +115,11 @@ a {
     transform: translate(-50%, 0);
 }
 
-.main-background {
-    position: relative;
+.main-background::after {
+    position: absolute;
+    content: url(../img/welcome.png);
+    left: 50%;
+    transform: translate(-50%, 21%);
 }
 
 .background-shape {
@@ -121,21 +127,15 @@ a {
     transform: translate(0, -100%);
 }
 
-.shape-welcome,
-.shape-gorgeous,
-.shape-sedona {
-    position: absolute;
-    left: 50%;
-}
-
-.shape-welcome {
-
+.features-main {
+    padding: 42px 0 51px;
 }
 
 .section-heading {
     font-size: 21px;
     line-height: 26px;
     text-align: center;
+    margin: 0 365px 44px;
 }
 
 .features-main p {
@@ -160,6 +160,7 @@ a {
 
 .features-item {
     text-align: center;
+    padding: 40px 48px 34px;
 }
   
   
@@ -206,10 +207,18 @@ a {
     list-style: none;
 }
 
+.features-item.secondary h3 {
+    margin-top: 0;
+}
+
 .features-secondary {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0;
+}
+
+.interested {
+    padding-top: 58px;
 }
 
 .interested p {
@@ -247,10 +256,6 @@ a {
 .filter-check {
     background-image: url(../img/checkbox.svg);
 
-}
-
-.range-group {
-    1
 }
 
 .range-input {
