@@ -10,6 +10,7 @@
     --sedona-features-grey: #eeeeee;
     --copyright-logo-grey: #bdbbbc;
     --ratio-grey: #666666;
+    --edging-grey: #e5e5e5;
     --ratio-block-grey: #f2f2f2;
     --arrow-grey: #cacaca;
   }
@@ -55,11 +56,10 @@ a {
 .header-nav-list {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+
     list-style: none;
-    height: 56px;
     margin: 0;
-    padding: 0;
+    padding: 15px 72px 15px;
 }
 
 .header-nav-item {
@@ -68,8 +68,28 @@ a {
     color: var(--black);
 }
 
+.header-nav-list li:first-child,
+.header-nav-list li:last-child {
+    width: 127px;
+}
+
+.header-nav-list li:nth-child(2),
+.header-nav-list li:nth-child(3) {
+    width: 200px;
+}
+
+.header-nav-list li:first-child,
+.header-nav-list li:nth-child(3) {
+    text-align: left;
+}
+
+.header-nav-list li:nth-child(2),
+.header-nav-list li:last-child {
+    text-align: right;
+}
+
 .header-nav-list li:nth-child(3){
-    margin-left: 250px;
+    margin-left: auto;
 }
 
 .header-nav-item:hover,
@@ -88,7 +108,28 @@ a {
 
 .site-logo {
     position: absolute;
-    left: 621px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.main-background {
+    position: relative;
+}
+
+.background-shape {
+    position: absolute;
+    transform: translate(0, -100%);
+}
+
+.shape-welcome,
+.shape-gorgeous,
+.shape-sedona {
+    position: absolute;
+    left: 50%;
+}
+
+.shape-welcome {
+
 }
 
 .section-heading {
@@ -183,22 +224,59 @@ a {
     text-align: center;
 }
 
+.inner-filters {
+    display: grid;
+    grid-template-columns: 225px 225px 1fr;
+    background-image: url(..//img/background-inner.png);
+    background-repeat: no-repeat;
+    color: var(--white);
+    padding: 26px 72px 31px;
+}
+
+.inner-filter h4 {
+    margin-top: 0;
+}
+
+.filter-right-list,
+.filter-left-list {
+    list-style: none;
+    padding-left: 0;
+    font-weight: 400;
+}
+
+.filter-check {
+    background-image: url(../img/checkbox.svg);
+
+}
+
+.range-group {
+    1
+}
+
+.range-input {
+    border: none;
+    background-color: transparent;
+}
+
 .sort {
     display: grid;
     grid-template-columns: 1fr 127px;
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
+    padding: 29px 73px 21px;
 }
 
 .sort-list {
- 
-    
+    display: flex;
+    align-items: center;
+
 }
 
 .sort-filter-list {
     list-style: none;
-
+    display: flex;
+    margin-right: auto;
 }
 
 .sort-filter-list,
@@ -213,6 +291,7 @@ a {
     text-decoration-color: var(--sedona-blue);
     color: var(--black);
     opacity: 30%;
+    margin-right: 32px;
 }
 
 .sort-filter-item a:hover,
@@ -267,9 +346,11 @@ a {
 }
 
 .hotel {
-        display: grid;
+    display: grid;
     grid-template-columns: 1fr 127px;
     align-items: center;
+    border-bottom: 1px solid var(--edging-grey);
+    padding: 30px 73px;
 }
 
 .hotel-photo {
@@ -301,6 +382,10 @@ a {
 .hotel-name:active {
     color: var(--black);
     opacity: 30%;
+}
+
+.hotels {
+    border-top: 1px solid var(--edging-grey);
 }
 
 .hotels-list {
@@ -362,6 +447,7 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    padding: 23px 56px;
 }
 
 .contacts {
